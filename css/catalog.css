@@ -1,0 +1,51 @@
+.filter {
+    min-width: 160px;
+    min-height: 40px;
+    padding: 9px 32px;
+    text-align: center;
+    border: solid 1px #937A60;
+    cursor: pointer;
+}
+
+.card-list {
+    padding: 85px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 78px;
+    justify-content: center;
+
+}
+
+.card-list__card {
+    max-width: 340px;
+}
+
+.card-list__card-info {
+    margin: 24px 0 19px 0;
+    height: 28px;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+}
+
+.card-list__card-text {
+    color: #937A60;
+}
+
+.slide-bar {
+    margin-bottom: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 1200px) {
+    .card-list__card-calcu {
+        display: none;
+    }
+
+    .card-list__card {
+        width: 144px;
+        min-height: 244px;
+    }
+
+}

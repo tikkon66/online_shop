@@ -1,0 +1,141 @@
+.list-bar {
+    margin-top: 61px;
+}
+
+.list-bar__item {
+    display: flex;
+    gap: 8px;
+}
+.list-bar__item-link {
+    font-family: 'Gilroy-Light';
+    font-size: 14px;
+    color: #11100E;
+}
+
+.card {
+    padding: 21px 0 173px 0 ;
+    display: flex;
+    gap: 44px;
+}
+
+.card__slider-item {
+    display: flex;
+    gap: 23px;
+    margin-top: 28px;
+}
+
+.card__info {
+    line-height: 38px;
+    max-width: 637px;
+}
+
+.card__slider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card__slider-img {
+    width: 150px;
+}
+
+.card__info-title {
+    font-family: 'Gilroy-Light';
+    font-size: 55px;
+    margin-bottom: 36px;
+}
+
+.card__info-elem {
+    max-width: 625px;
+    height: 2px;
+    background: #AF9678;
+    margin: 61px 0 40px 0;
+}
+
+.card__info-item3, .card__info-item4 {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.card__info-item2{
+    margin-top: 40px;
+    display: flex;
+    gap: 52px;
+}
+
+.card__info-price {
+    max-width: 206px;
+    width: 100%;
+    min-height: 56px;
+    padding: 8px 0;
+    border: solid 2px #000;
+}
+
+.card__info-text {
+    text-align: center;
+}
+
+.card__info-button {
+    min-width: 206px;
+    padding: 14px 37px;
+    background-color: #AF9678;
+    border-radius: 8px;
+    color: #fff;
+}
+.card__info-title1 {
+    align-self: flex-start;
+    display: none;
+    font-family: 'Gilroy-Light';
+    font-size: 29px;
+    margin-bottom: 31px;
+}
+
+@media (max-width: 1200px) {
+
+    .card__slider-img1 {
+        width: 288px;
+        height: 268px;
+    }
+
+    .card__slider-img {
+        width: 98px;
+        height: 108px;
+    }
+
+    .card__slider {
+        max-width: 330px;
+        margin: auto;
+    }
+
+    .card {
+        padding: 21px 0 173px 0 ;
+        display: flex;
+        flex-direction: column;
+        gap: 44px;
+    }
+
+    .card__info-title1 {
+        display: inline-block;
+    }
+
+    .card__info-title {
+        display: none;
+    }
+
+    .card__info-item2{
+        margin-top: 40px;
+        display: flex;
+        gap: 42px;
+        flex-direction: column;
+    }
+
+    .card__info-item3 {
+        flex-direction: row;
+        gap: 24px;
+    }
+
+    .card__info-item4 {
+        flex-direction: column;
+    }
+}
