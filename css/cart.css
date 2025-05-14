@@ -1,0 +1,104 @@
+.main2 {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.slide-block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: space-evenly;
+    outline: solid 2px #937A60;
+    height: 100vh;
+    overflow-y: auto;
+    border-radius: 10px;
+    padding-bottom: 80px;
+}
+
+.fitt {
+    width: fit-content;
+    height: fit-content;
+    outline: solid 2px #937A60;
+    border-radius: 10px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.fitt-dummy {
+    min-width: 375px;
+    max-width: 375px;
+
+}
+
+.button-fitt {
+    min-width: 100%;
+}
+
+
+.clothe {
+    position: absolute;
+    display: none;
+}
+
+.bluzer {
+    left: 96px;
+    top: 103px;
+    z-index: 4;
+    width: 177px;
+    height: 215px;
+}
+
+.pant {
+    left: 130px;
+    top: 245px;
+    z-index: 2;
+    width: 113px;
+    height: 290px;
+}
+
+.shirt {
+    left: 97px;
+    top: 102px;
+    z-index: 3;
+    width: 173px;
+    height: 205px;
+}
+
+.tshirt {
+    left: 101px;
+    top: 109px;
+    z-index: 3;
+    width: 168px;
+    height: 165px;
+}
+
+.shoe {
+    left: 101px;
+    top: 527px;
+    z-index: 1;
+    width: 163px;
+    height: 55px;
+}
+
+
+
+@media (max-width: 740px) {
+    .main2 {
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .slide-block {
+        outline: solid 0px #937A60;
+        height: auto;
+        overflow-y: hidden;
+        padding-bottom: 30px;
+        margin-top: -50px;
+        justify-content: space-evenly;
+    }
+
+}

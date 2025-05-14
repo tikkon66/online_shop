@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/library.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/pages.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <title>Tikkon - каталог</title>
+</head>
+
+<body>
+    <div id="window-login" class="window">
+        <div style="display: flex; justify-content: end;">
+            <img id="exit-login" class="window-exit" src="../img/index/header/exit_window.png" alt="назад">
+        </div>
+        <input id="login-name" class="window-bar" type="text" placeholder="Ваше Имя">
+        <input id="login-password" class="window-bar" type="password" placeholder="Ваш пароль">
+        <button id="login" class="button window-button">Войти</button>
+        <p id="textReg" style="cursor: pointer;">Создать аккаунт</p>
+    </div>
+
+    <div id="window-register" class="register window">
+        <div id="exit-register" style="display: flex; justify-content: end;">
+            <img class="window-exit" src="../img/index/header/exit_window.png" alt="назад">
+        </div>
+        <input id="register-name" class="window-bar" type="text" placeholder="Ваше Имя">
+        <input id="register-password" class="window-bar" type="password" placeholder="Придумайте пароль">
+        <button id="register" class="button window-button">Создать</button>
+        <p id="textLog" style="cursor: pointer;">Войти в существующий</p>
+    </div>
+    <div class="menu-block" id="menu-block">
+        <nav class="menu__nav">
+            <ul class="menu__list">
+
+                <li id="mobil-login-button" class="header__list-item"><a href="#"
+                        class="login-button menu__list-item-link link">Войти</a></li>
+
+                <li>
+                    <ol id="mobil-cart-button" class="dis-none cart-list">
+                        <li onclick="exitAcc()" class="header__list-item"><a href="#"
+                                class="menu__list-item-link link">Выйти с аккаунта</a></li>
+                        <li class="header__list-item"><a href="cart.html" class="menu__list-item-link link">Корзина</a>
+                        </li>
+                    </ol>
+                </li>
+
+
+
+                <li class="header__list-item"><a href="../index.html#about" class="menu__list-item-link link">О нас</a></li>
+
+                <li class="header__list-item"><a href="../index.html#clothes" class="menu__list-item-link link">Одежда</a></li>
+
+                <li class="header__list-item"><a href="cart.html#primerka" class="menu__list-item-link link">Примерка</a></li>
+            </ul>
+        </nav>
+        <img class="menu-exit" id="menuClose" src="../img/index/header/exit.png" alt="Назад">
+    </div>
+
+    <button class="up" onclick="location.href='#header'">
+        <img style="min-height: 10px; min-width: 10px;" src="../img/index/header/button__up.png" alt="button">
+    </button>
+
+    <div id="fon">
+        <header id="header" class="header__info">
+            <img class="menu" id="menuOpen" src="../img/index/header/page_menu.svg" alt="menu">
+
+            <a href="../index.html">
+                <img class="logo" src="../img/index/header/logo.svg" alt="логотип">
+            </a>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__list-item"><a href="../index.html#about" class="list-bar__item-link">О нас</a>
+                    </li>
+
+                    <li class="header__list-item"><a href="../index.html#clothes" class="list-bar__item-link">Одежда</a>
+                    </li>
+
+                    <li class="header__list-item"><a href="cart.html#primerka" class="list-bar__item-link">Примерка</a>
+                    </li>
+                </ul>
+            </nav>
+            <div id="login-button" class="dis-none login-button header__info-button2 header-login2">Войти</div>
+            <div id="cart-button" class="cart-block">
+                <img class="exit-acc" onclick="exitAcc()" src="../img/index/header/page_exit_login.png" alt="выйти">
+                <div class="header__info-button2 header-login" onclick="location.href='cart.html'">Корзина</div>
+            </div>
+        </header>
+
+        <main class="main2">
+            <div id="products-block" class="wrapper products-block">
+                
+            </div>
+        </main>
+
+        <footer>
+            <div class="wrapper footer">
+                <div class="footer__info">
+                    <a class="footer__logo" href=""><img class="logo" src="../img/index/footer/logo.svg" alt="logo"></a>
+                    <div class="map map__img">
+                        <iframe style="border: none; border-radius: 12px; width:100%; height:100% "
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A7b1078f4521809f9455fff774053a5b2d6b4057b814cf9073e709ae2115c92d6&amp;source=constructor"></iframe>
+
+                    </div>
+                </div>
+                <ul class="footer__info-list">
+                    <li><a class="link text-size_30" href="../index.html#about">О нас</a></li>
+                    <li><a class="link text-size_30" href="../index.html#choise">Одежда</a></li>
+                    <li><a class="link text-size_30" href="cart.html#primerka">Примерка</a></li>
+                </ul>
+                <div class="map1">
+                    <iframe style="border: none; border-radius: 12px; width:100%; height:100% "
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A7b1078f4521809f9455fff774053a5b2d6b4057b814cf9073e709ae2115c92d6&amp;source=constructor"></iframe>
+
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <script src="../js/back.js"></script>
+    <script src="../js/pages.js"></script>
+    <script src="../js/catalog.js"></script>
+</body>
+
+</html>

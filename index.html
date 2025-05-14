@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/library.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Tikkon - интернет магазин</title>
+</head>
+
+<body>
+    <div id="window-login" class="window">
+        <div style="display: flex; justify-content: end;">
+            <img id="exit-login" class="window-exit" src="img/index/header/exit_window.png" alt="назад">
+        </div>
+        <input id="login-name" class="window-bar" type="text" placeholder="Ваше Имя">
+        <input id="login-password" class="window-bar" type="password" placeholder="Ваш пароль">
+        <button id="login" class="button window-button">Войти</button>
+        <p id="textReg" style="cursor: pointer;">Создать аккаунт</p>
+    </div>
+
+    <div id="window-register" class="register window">
+        <div id="exit-register" style="display: flex; justify-content: end;">
+            <img class="window-exit" src="img/index/header/exit_window.png" alt="назад">
+        </div>
+        <input id="register-name" class="window-bar" type="text" placeholder="Ваше Имя">
+        <input id="register-password" class="window-bar" type="password" placeholder="Придумайте пароль">
+        <button id="register" class="button window-button">Создать</button>
+        <p id="textLog" style="cursor: pointer;">Войти в существующий</p>
+    </div>
+    <div class="menu-block" id="menu-block">
+        <nav class="menu__nav">
+            <ul class="menu__list">
+
+                <li id="mobil-login-button" class="header__list-item"><a href="#"
+                        class="login-button menu__list-item-link link">Войти</a></li>
+
+                <li>
+                    <ol id="mobil-cart-button" class="dis-none cart-list">
+                        <li onclick="exitAcc()" class="header__list-item"><a href="#"
+                                class="menu__list-item-link link">Выйти с аккаунта</a></li>
+                        <li class="header__list-item"><a href="page/cart.html" class="menu__list-item-link link">Корзина</a></li>
+                    </ol>
+                </li>
+
+
+
+                <li class="header__list-item"><a href="#about" class="menu__list-item-link link">О нас</a></li>
+
+                <li class="header__list-item"><a href="#clothes" class="menu__list-item-link link">Одежда</a></li>
+
+                <li class="header__list-item"><a href="cart.html#primerka" class="menu__list-item-link link">Примерка</a></li>
+            </ul>
+        </nav>
+        <img class="menu-exit" id="menuClose" src="img/index/header/exit.png" alt="Назад">
+    </div>
+
+    <button class="up" onclick="location.href='#header'">
+        <img style="min-height: 10px; min-width: 10px;" src="img/index/header/button__up.png" alt="button">
+    </button>
+
+    <div id="fon">
+        <div class="header" id="header">
+            <header class="header__info">
+                <img class="menu" id="menuOpen" src="img/index/header/menu.svg" alt="menu">
+
+                <a href="">
+                    <img class="logo" src="img/index/header/logo.svg" alt="логотип">
+                </a>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__list-item"><a href="#about" class="header__list-item-link link">О нас</a>
+                        </li>
+
+                        <li class="header__list-item"><a href="#clothes" class="header__list-item-link link">Одежда</a>
+                        </li>
+
+                        <li class="header__list-item"><a href="cart.html#primerka" class="header__list-item-link link">Примерка</a>
+                        </li>
+                    </ul>
+                </nav>
+                <div id="login-button" class="dis-none login-button header__info-button header-login">Войти</div>
+                <div id="cart-button" class="cart-block">
+                    <img class="exit-acc" onclick="exitAcc()" src="img/index/header/exit_login.png" alt="выйти">
+                    <div class="header__info-button header-login"  onclick="location.href='page/cart.html'">Корзина</div>
+                </div>
+            </header>
+
+            <section class="wrapper cabinets">
+                <div class="cabinets__info">
+                    <h1 class="cabinets__info-title">
+                        Закажи одежду
+                    </h1>
+                    <p class="cabinets__info-discription text-size_33">
+                        За первый заказ скидка 10% каждому покупателю
+                    </p>
+                    <p class="cabinets__info-discription text-size_26">
+                        До конца скидки осталось:
+                    </p>
+                    <div class="cabinets__info-box">
+                        <div class="cabinets__info-elem">
+                            <div class="cabinets__info-item"><span id="cabinets-day">2</span></div>
+                            <p>Дни</p>
+                        </div>
+                        <div class="cabinets__info-elem">
+                            <div class="cabinets__info-item"><span id="cabinets-hour">0</span></div>
+                            <p>Часы</p>
+                        </div>
+                        <div class="cabinets__info-elem">
+                            <div class="cabinets__info-item"><span id="cabinets-min">0</span></div>
+                            <p>Мин</p>
+                        </div>
+                        <div class="cabinets__info-elem">
+                            <div class="cabinets__info-item"><span id="cabinets-sec">0</span></div>
+                            <p>Сек</p>
+                        </div>
+                    </div>
+
+                    <button onclick="location.href='#clothes'" class="button text-size_26">Получить скидку</button>
+
+                    <div class="cabinets__info-elem2">
+                        <img class="cabinets__info-item2" src="img/index/header/Line.png" alt="линия">
+                        <div class="cabinets__info-item3">
+                            <a href="https://www.tiktok.com/ru-RU/" target="_blank">
+                                <img class="cabinets__info-item5" src="img/index/header/viber.png" alt="viber">
+                            </a>
+                            <a href="https://web.telegram.org/" target="_blank">
+                                <img class="cabinets__info-item5" src="img/index/header/telegram.png" alt="telegram">
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank">
+                                <img class="cabinets__info-item5" src="img/index/header/whatsapp.png" alt="whatsapp">
+                            </a>
+                        </div>
+
+                        <img class="cabinets__info-item4" src="img/index/header/Line(0).png" alt="линия">
+                    </div>
+                </div>
+
+            </section>
+
+
+        </div>
+        <main>
+
+
+
+
+            <section class="price">
+                <div class="wrapper price__info">
+                    <div class="price__info-img">
+                        <img class="top" src="img/index/header/Line(1).png" alt="линия">
+                        <img class="rigth" src="img/index/header/Line(2).png" alt="линия">
+                        <img class="bottom" src="img/index/header/Line(1).png" alt="линия">
+                        <img class="left" src="img/index/header/Line(2).png" alt="линия">
+                    </div>
+                    <div class="price__info-disc">
+                        <h2 class="price__info-title">Узнайте, подходить ли вам стиль</h2>
+                        <p class="price__info-text text-size_30">Примерьте любую понравившуюся одежду на манекене.
+                        </p>
+                        <div class="price__button"><button  onclick="location.href='page/cart.html'"  class="button text-size_26">Попробовать</button></div>
+
+                    </div>
+                </div>
+
+            </section>
+            <section class="about" id="about">
+                <div class="wrapper about__info">
+                    <h2 class="about__info-title color-title__93">O нас</h2>
+                    <p class="about__info-text text-size_30">
+                        Мы — новый онлайн-магазин одежды, где можно не просто выбрать, но и примерить вещи прямо на
+                        виртуальном манекене.
+                        Наша цель — сделать онлайн-шопинг удобным, стильным и точным. Забудьте про угадайки со стилями —
+                        просто выберите одежду, примерьте
+                        и найдите свой идеальный образ.
+                        Мы только начали, но уже вкладываем душу в каждый элемент, чтобы вам было удобно и интересно
+                        возвращаться к нам снова.
+                    </p>
+                </div>
+            </section>
+
+            <section class="why">
+                <div class="wrapper why__info">
+                    <h2 class="color-title__93 ">Почему клиенты выбирают нас:</h2>
+                    <div class="why__info-item">
+                        <div class="why__info-item2">
+                            <img class="why__img" src="img/index/why/fast.png" alt="Оперативные сроки">
+                            <p class="text-size_26">Оперативные сроки</p>
+                        </div>
+                        <div class="why__info-item2">
+                            <img class="why__img" src="img/index/why/promotions.png" alt="Акции, скидки,бонусы">
+                            <p class="text-size_26">Акции, скидки,бонусы</p>
+                        </div>
+                        <div class="why__info-item2">
+                            <img class="why__img" src="img/index/why/medal.png" alt="Европейское качество">
+                            <p class="text-size_26">Европейское качество</p>
+                        </div>
+                        <div class="why__info-item2">
+                            <img class="why__img" src="img/index/why/Group.png" alt="Бесплатная 3d визуализация">
+                            <p class="text-size_26">Бесплатная 3d визуализация</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <section class="share">
+                <div class="share__info wrapper">
+                    <h2 class="share__info-title">Акции</h2>
+                    <p class="share__info-text text-size_30">Узнай первым об акциях и скидках</p>
+                    <input class="share__info-email text-size_26" id="email-follow" type="email" placeholder="ваш email для рассылки">
+                    <div class="share__info-item">
+                        <button class="share__info-follow text-size_26" onclick="follow()">Подписаться</button>
+                    </div>
+                    <img class="share__info-bg" src="img/index/share/phone.png" alt="задний фон">
+                </div>
+            </section>
+
+            <section id="clothes" class="product">
+                <div class="wrapper product__info">
+                    <h2 class="color-title__93 left-title">Одежда</h2>
+                    <div id="products-block" class="product__info-box">
+                       
+                   
+
+                </div> <a href="page/catalog.html">
+                        <div class="product__info-still">
+                            <p class="product__info-text text-size_30">Смотреть ещё</p>
+                        </div>
+                    </a>
+
+
+            </section>
+            <section class="test" id="test">
+                <div class="test__info">
+                    <img class="test__info-img" src="img/index/teest/bg.png" alt="задний фон">
+                    <div class="test__info-item wrapper">
+                        <h2>Примерочная</h2>
+                        <div style="display: flex; gap: 32px; margin-top: 32px;">
+                            <img class="test__info-img2" src="img/index/teest/bg.png" alt="фото">
+                            <p class="text-size_30">Примерьте и выберите то, что действительно вам нравится!</p>
+                        </div>
+                        <button class="button text-size_26" onclick="location.href='page/cart.html'" >Примерить</button>
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+        <footer>
+            <div class="wrapper footer">
+                <div class="footer__info">
+                    <a class="footer__logo" href=""><img class="logo" src="img/index/footer/logo.svg" alt="logo"></a>
+                    <div class="map map__img">
+                        <iframe style="border: none; border-radius: 12px; width:100%; height:100% "
+                            src="https://yandex.ru/map-widget/v1/?um=constructor%3A7b1078f4521809f9455fff774053a5b2d6b4057b814cf9073e709ae2115c92d6&amp;source=constructor"></iframe>
+
+                    </div>
+                </div>
+                <ul class="footer__info-list">
+                    <li><a class="link text-size_30" href="#about">О нас</a></li>
+                    <li><a class="link text-size_30" href="#choise">Одежда</a></li>
+                    <li><a class="link text-size_30" href="cart.html#primerka">Примерка</a></li>
+                </ul>
+                <div class="map1">
+                    <iframe style="border: none; border-radius: 12px; width:100%; height:100% "
+                        src="https://yandex.ru/map-widget/v1/?um=constructor%3A7b1078f4521809f9455fff774053a5b2d6b4057b814cf9073e709ae2115c92d6&amp;source=constructor"></iframe>
+
+                </div>
+
+            </div>
+        </footer>
+    </div>
+    <script src="js/back.js"></script>
+    <script src="js/front.js"></script>
+</body>
+
+</html>

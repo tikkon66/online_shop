@@ -1,0 +1,177 @@
+/*  */
+
+
+
+h2 {
+    font-family: "Cormorant-Regular", serif;
+    font-size: 68px;
+    font-weight: lighter;
+}
+
+.dis-none {
+    display: none;
+}
+
+.text-size_33 {
+    font-family: 'Gilroy-Light';
+    font-weight: lighter;
+    font-size: 33px;
+}
+
+.text-size_30 {
+    font-family: 'Gilroy-Light';
+    font-weight: lighter;
+    font-size: 30px;
+    position: relative;
+}
+
+.text-size_28 {
+    font-family: 'Gilroy-Light';
+    font-weight: lighter;
+    font-size: 28px;
+}
+
+.text-size_26 {
+    font-family: 'Gilroy-Light';
+    font-weight: lighter;
+    font-size: 26px;
+}
+
+.text-size_25 {
+    font-family: 'Gilroy-Light';
+    font-weight: lighter;
+    font-size: 25px;
+}
+
+.text-size_20 {
+    font-family: 'Gilroy-Light';
+    font-weight: lighter;
+    font-size: 20px;
+
+}
+
+.flex {
+    display: flex;
+}
+
+.column {
+    flex-direction: column;
+    text-align: end;
+
+}
+
+.justify_sb {
+    justify-content: space-between;
+
+}
+
+.wrapper {
+    max-width: 1176px;
+    margin: auto;
+}
+
+.input {
+    max-width: 510px;
+    width: 100%;
+    height: 51px;
+    padding: 11px 20px;
+    border-radius: 8px;
+    background-color: #fbfbfb;
+    margin-top: 30px;
+    color: #11100E;
+}
+
+.button {
+    max-width: 260px;
+    width: 100%;
+    padding: 14px 28px;
+    background-color: #AF9678;
+    border-radius: 8px;
+    margin-top: 28px;
+    color: #fff;
+    font-family: 'Gilroy-Light';
+    transition: all 0.3s;
+}
+
+.button:active {
+    transform: scale(0.95)
+}
+
+.card-button {
+    font-size: 20px;
+    min-width: 100%;
+}
+
+.color-title__93 {
+    color: #937A60;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.left-title {
+    text-align: left;
+    line-height: 28px;
+    margin-bottom: 60px;
+}
+
+
+
+.link {
+    font-family: 'Gilroy-Light';
+    font-weight: lighter;
+    font-size: 24px;
+    color: #fff;
+
+
+}
+
+.black-text {
+    color: #11100E;
+}
+
+@media (max-width: 1200px) {
+
+    .color-title__93 {
+        margin-bottom: 10px;
+    }
+
+    .text-size_20 {
+        font-size: 12px;
+    }
+
+    .text-size_33 {
+        font-size: 23px;
+    }
+
+    .text-size_30 {
+        font-size: 20px;
+    }
+
+    .text-size_26 {
+        font-size: 18px;
+    }
+
+    .text-size_28 {
+        font-size: 17px;
+    }
+
+    .text-size_25 {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .card-button {
+        font-size: 13px;
+        padding: 10px;
+        margin-top: 5px;
+    }
+
+    .wrapper {
+        padding: 0 20px;
+        min-width: 330px;
+        max-width: 770px;
+    }
+
+    h2 {
+        font-size: 39px;
+    }
+}
