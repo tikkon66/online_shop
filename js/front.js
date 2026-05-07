@@ -332,7 +332,6 @@ function addCart(title) {
         let userArray = JSON.parse(localStorage.getItem("userArray"));
         let userInArray = localStorage.getItem("user");
         let inCart = false;
-        console.log(userArray[userInArray].products)
 
         if (userArray[userInArray].products !== "") {
             let parts = userArray[userInArray]?.products?.trim().split(" ").filter(Boolean) ?? [];
@@ -350,8 +349,10 @@ function addCart(title) {
             userArray[userInArray].products += `${title} `;
             localStorage.setItem("userArray", JSON.stringify(userArray));
             alert("Добавлено!");
+        console.log(userArray[userInArray].products)
         } else {
             alert("Товар уже в корзине!");
+        console.log(userArray[userInArray].products)
         }
     } else {
         alert("Вы не вошли в аккаунт!");
