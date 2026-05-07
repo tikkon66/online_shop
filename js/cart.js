@@ -35,7 +35,8 @@ if(isUser == "true") {
     let parts = userArray[userInArray]?.products?.trim().split(" ").filter(Boolean) ?? [];
 
     console.log(parts);
-    for (let i = 0; i < parts.length; i++) {
+    for (let i = 0; i < products.length; i++) {
+        if (parts.includes(products[i].title))
         createProductCard(products[i], i)
     }
 }
