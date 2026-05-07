@@ -4,7 +4,7 @@ let main = document.getElementById("products-block");
 let products = JSON.parse(localStorage.getItem('products'));
 let productsBlock = document.getElementById("products-block")
 
-function createProductCard({ title, price, imgSrc, link }, count) {
+function createProductCard({ title, price, imgSrc, link }) {
     const card = document.createElement('div');
     card.className = 'product__info-item';
 
@@ -18,7 +18,7 @@ function createProductCard({ title, price, imgSrc, link }, count) {
                     </div>
                 </div>
             </a>
-            <button onclick="addCart(${count})" class="button card-button">В корзину</button>
+            <button onclick="addCart(${title})" class="button card-button">В корзину</button>
     `;
 
     main.appendChild(card);
@@ -26,5 +26,5 @@ function createProductCard({ title, price, imgSrc, link }, count) {
 }
 
 for (let i = 0; i < products.length; i++) {
-    createProductCard(products[i], i)
+    createProductCard(products[i])
 }
