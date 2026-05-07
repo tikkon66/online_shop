@@ -327,7 +327,7 @@ for (let i = 0; i < products.length; i++) {
 
 
 // добавить в корзину
-function addCart(count) {
+function addCart(title) {
     if (isUser == "true") {
         let userArray = JSON.parse(localStorage.getItem("userArray"));
         let userInArray = localStorage.getItem("user");
@@ -340,15 +340,14 @@ function addCart(count) {
             console.log(parts);
 
             for (let i = 0; i < parts.length && !inCart; i++) {
-                if (parts[i] == count) {
+                if (parts[i] == title) {
                     inCart = true;
                 }
             }
         }
 
         if (!inCart) {
-
-            userArray[userInArray].products += `${count} `;
+            userArray[userInArray].products += `${title} `;
             localStorage.setItem("userArray", JSON.stringify(userArray));
             alert("Добавлено!");
         } else {
