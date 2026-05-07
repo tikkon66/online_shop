@@ -36,8 +36,9 @@ if(isUser == "true") {
 
     console.log(parts);
     for (let i = 0; i < products.length; i++) {
-        if (parts.includes(products[i].title))
+        if (parts.includes(products[i].title)) {
         createProductCard(products[i], i)
+        }
     }
 }
 }
