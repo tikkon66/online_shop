@@ -328,6 +328,7 @@ for (let i = 0; i < products.length; i++) {
 
 // добавить в корзину
 function addCart(title) {
+        console.log(title)
     if (isUser == "true") {
         let userArray = JSON.parse(localStorage.getItem("userArray"));
         let userInArray = localStorage.getItem("user");
